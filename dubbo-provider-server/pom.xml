@@ -11,6 +11,7 @@
 
     <artifactId>dubbo-provider-server</artifactId>
 
+    <name>dubbo-provider-server</name>
 
     <dependencies>
         <dependency>
@@ -30,7 +31,14 @@
             <groupId>com.my.dubbo</groupId>
             <artifactId>dubbo-provider-api</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+        </dependency>
 
     </dependencies>
 

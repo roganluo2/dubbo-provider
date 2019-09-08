@@ -12,14 +12,6 @@
     <artifactId>dubbo-provider-api</artifactId>
 
 
-    <dependencies>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-    </dependencies>
-
+    <name>dubbo-provider-api</name>
 
 </project>

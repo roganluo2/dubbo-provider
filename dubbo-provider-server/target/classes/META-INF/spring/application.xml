@@ -6,13 +6,20 @@
        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
     <dubbo:application name="dubbo-server"/>
 
-    <dubbo:registry address="N/A"/>
+<!--    <dubbo:registry address="zookeeper://120.79.226.150:2181"/>-->
 
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <dubbo:service interface="com.my.dubbo.service.LoginService" ref="loginService"/>
+    <dubbo:service interface="com.my.dubbo.service.LoginService" ref="loginService" registry="reg1"/>
 
     <bean id="loginService" class="com.my.dubbo.service.impl.LoginServiceImpl"/>
+
+    <!-- 多注册中心-->
+    <dubbo:registry address="zookeeper://120.79.226.150:2181" id="reg1"/>
+<!--    <dubbo:registry address="zookeeper://120.79.226.150:2181" id="reg2"/>-->
+
+
+
 
 
 </beans>
